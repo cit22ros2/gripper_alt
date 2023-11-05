@@ -86,7 +86,7 @@ int main(int argc, char ** argv)
   target_pose.position.x = 0.3;
   target_pose.position.y = -0.15;
   target_pose.position.z = 0.1;
-  q.setRPY(angles::from_degrees(-90), angles::from_degrees(0), angles::from_degrees(-90));
+  q.setRPY(angles::from_degrees(90), angles::from_degrees(0), angles::from_degrees(90));
   target_pose.orientation = tf2::toMsg(q);
   move_group_arm.setPoseTarget(target_pose);
   move_group_arm.move();
@@ -100,7 +100,7 @@ int main(int argc, char ** argv)
   target_pose.position.x = 0.3;
   target_pose.position.y = 0.0; 
   target_pose.position.z = 0.3; 
-  q.setRPY(angles::from_degrees(-90), angles::from_degrees(0), angles::from_degrees(-90));
+  q.setRPY(angles::from_degrees(90), angles::from_degrees(0), angles::from_degrees(90));
   target_pose.orientation = tf2::toMsg(q);
   move_group_arm.setPoseTarget(target_pose);
   move_group_arm.move();
@@ -109,7 +109,7 @@ int main(int argc, char ** argv)
   target_pose.position.x = 0.3;
   target_pose.position.y = 0.15;
   target_pose.position.z = 0.1;
-  q.setRPY(angles::from_degrees(-90), angles::from_degrees(0), angles::from_degrees(-90));
+  q.setRPY(angles::from_degrees(90), angles::from_degrees(0), angles::from_degrees(90));
   target_pose.orientation = tf2::toMsg(q);
   move_group_arm.setPoseTarget(target_pose);
   move_group_arm.move();
